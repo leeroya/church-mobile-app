@@ -10,6 +10,8 @@
             VerticalOptions="Center">
 
             <Image
+                x:Name="HomeView"
+                IsVisible="false"
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
@@ -34,8 +36,17 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
-
+            <StackLayout
+                x:Name="LoginView">
+                <Button 
+                    x:Name="LoginBtn"
+                    Text="Log In"
+                    SemanticProperties.Hint="Click to log in"
+                    Clicked="OnLoginClicked"
+                    HorizontalOptions="Center" />
+            </StackLayout>
         </VerticalStackLayout>
+     
     </ScrollView>
 
 </ContentPage>
