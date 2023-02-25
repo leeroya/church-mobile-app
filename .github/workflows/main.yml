@@ -30,4 +30,4 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore src/DestinyLife/DestinyLife/DestinyLife.csproj
     - name: Build
-      run: dotnet build src/DestinyLife/DestinyLife/DestinyLife.csproj -c Release -f net6.0-android --no-restore
+      run: dotnet build src/DestinyLife/DestinyLife/DestinyLife.csproj -c Release -f net7.0-android --no-restore
