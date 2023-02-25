@@ -25,7 +25,7 @@ public static class MauiProgram
         builder.Services.AddSingleton(new Auth0Client(new()
         {
             Domain = "leeroya.auth0.com",
-            ClientId = "ZejUMbk2YAIYE5gTStccPo6xCx33tUMt",
+            ClientId = "<ID>",
             Scope = "openid profile",
             RedirectUri = "myapp://callback"
         }));
